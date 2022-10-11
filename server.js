@@ -37,4 +37,6 @@ app.get("/greet", async (req, res) => {
 	res.send("its working");
 });
 
-app.listen(4242, () => console.log("Node server listening on port 4242!"));
+const PORT = process.env.PORT || 5001;
+app.set('port', process.env.PORT)
+app.listen(PORT, () -> console.log("Node server listening on port ${PORT}!"));

@@ -39,4 +39,4 @@ app.get("/greet", async (req, res) => {
 
 const PORT = process.env.PORT || 5001;
 app.set('port', process.env.PORT)
-app.listen(PORT, () -> console.log("Node server listening on port ${PORT}!"));
+app.listen(PORT, () => console.log("Node server listening on port ${PORT}!"));
